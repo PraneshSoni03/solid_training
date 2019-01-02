@@ -1,4 +1,5 @@
-package com.meditab.training.srp.exercise;
+package assignment_day3_1;
+
 
 public class Car
 {
@@ -6,5 +7,25 @@ public class Car
     private final String _model;
     private final String _brand;
 
+    public Car(String id, String model, String brand)
+    {
+        _id = id;
+        _model = model;
+        _brand = brand;
+    }
 
+    public String getId()
+    {
+        return _id;
+    }
+
+    public String getModel()
+    {
+        return _model;
+    }
+
+    public String getBrand()
+    {
+        return _brand;
+    }
 }

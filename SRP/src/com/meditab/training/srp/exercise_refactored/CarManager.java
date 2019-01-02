@@ -1,10 +1,12 @@
-package com.meditab.training.srp.exercise;
+package assignment_day3_1;
 
 import java.util.Arrays;
 import java.util.List;
 
 public class CarManager
 {
+	BestCar bestcar = null;
+	
     private List<Car> _carsDb = Arrays
         .asList(new Car("1", "Golf III", "Volkswagen"), new Car("2", "Multipla", "Fiat"),
             new Car("3", "Megane", "Renault"));
@@ -30,6 +32,9 @@ public class CarManager
         }
         return sb.substring(0, sb.length() - 2);
     }
+    public List<Car> getallCar()
+    {
+    	return _carsDb;
+    }
 
-  
 }
